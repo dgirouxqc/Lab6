@@ -10,8 +10,6 @@ jobs:
 
     steps:
       - run: -ls -la
-
-      -uses: actions/checkout@v4
-
-      -uses: actions/setup-python@v5
-      -run : python --version
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+      - run : python --version
